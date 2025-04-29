@@ -3,7 +3,7 @@
 client_id = "5abe22f1069680dd4db60d504a9afdf0"
 name = "StoreFront"
 handle = "storefront-4"
-application_url = "https://shopify.dev/apps/default-app-home"
+application_url = "https://store-front-customizer.vercel.app/"
 embedded = true
 
 [build]
@@ -14,18 +14,20 @@ api_version = "2025-04"
 
   [[webhooks.subscriptions]]
   topics = [ "app/scopes_update" ]
-  uri = "/webhooks/app/scopes_update"
+  uri = "https://shopify.dev/apps/default-app-home/webhooks/app/scopes_update"
 
   [[webhooks.subscriptions]]
   topics = [ "app/uninstalled" ]
-  uri = "/webhooks/app/uninstalled"
+  uri = "https://shopify.dev/apps/default-app-home/webhooks/app/uninstalled"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = ""
 
 [auth]
-redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
+redirect_urls = [
+  "https://store-front-customizer.vercel.app/api/auth/callback"
+]
 
 [pos]
 embedded = false

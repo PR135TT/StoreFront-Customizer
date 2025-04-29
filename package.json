@@ -2,6 +2,7 @@
   "name": "store-front",
   "private": true,
   "scripts": {
+    "prebuild": "prisma generate",
     "build": "remix vite:build",
     "dev": "shopify app dev",
     "config:link": "shopify app config link",
@@ -16,7 +17,10 @@
     "shopify": "shopify",
     "prisma": "prisma",
     "graphql-codegen": "graphql-codegen",
-    "vite": "vite"
+    "vite": "vite",
+    "postinstall": "prisma generate"
+}
+
   },
   "type": "module",
   "engines": {
@@ -73,3 +77,4 @@
   },
   "author": "HP"
 }
+
