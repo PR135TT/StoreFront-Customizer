@@ -2,8 +2,7 @@
   "name": "store-front",
   "private": true,
   "scripts": {
-    "prebuild": "prisma generate",
-    "build": "remix vite:build",
+    "build": "prisma generate && remix vite:build",
     "dev": "shopify app dev",
     "config:link": "shopify app config link",
     "generate": "shopify app generate",
