@@ -31,6 +31,3 @@ redirect_urls = [
 
 [pos]
 embedded = false
-
-[build]
-include_config_on_deploy = true
