@@ -3,7 +3,7 @@
 client_id = "5abe22f1069680dd4db60d504a9afdf0"
 name = "StoreFront"
 handle = "storefront-4"
-application_url = "https://store-front-customizer.vercel.app"
+application_url = "https://store-front-customizer.vercel.app/"
 embedded = true
 
 [build]
